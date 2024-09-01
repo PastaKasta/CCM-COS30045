@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #555;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    white-space: pre-wrap; /* Allow wrapping within <pre> */
+    word-wrap: break-word; /* Break long words */
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #ccc;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+#wee {
+    width: 50%;
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 20px; 
+}
+
+.svg-container {
+    background-image: url('cat.jpg'); /* Set background image */
+    background-size: cover; /* Optional: Adjust size */
+    padding: 20px; /* Optional padding */
+    display: inline-block;
+}

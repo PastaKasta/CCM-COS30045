@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="mystyle.css">
+<script src="Lab 1.1.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2.2</title>
+</head>
+<body>
+
+    <header>
+        <h1>Lab 2.2</h1>
+        <nav>
+            <ul>
+                <li><a href="Lab 2.1.html">Lab 2.1</a></li>
+                <li><a href="Lab 2.2.html">Lab 2.2</a></li>
+                <li><a href="Lab 2.3.html">Lab 2.3</a></li>
+                <li><a href="Lab 2.4.html">Lab 2.4</a></li>
+            </ul>
+        </nav>
+
+                <button onclick="window.location.href='CCM-Main.html'" style="
+                background-color: #0cbee7;
+                color: rgb(255, 255, 255); 
+                padding: 10px 20px; 
+                font-size: 30px; 
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;">Homepage</button>
+    </header>
+
+<br>
+
+
+
+<script>
+            var w = 500;
+            var h = 100;
+            var dataset = [5,10,15,20,25,20,15,10];
+            var padding = 3;
+
+            var svg = d3.select("body")
+            .append("svg")
+            .attr("width",w)
+            .attr("height",h);
+
+            svg.selectAll("rect")
+            .data(dataset)
+            .enter()
+            .append("rect")
+            .attr("x", function(d,i)
+            {
+                return i * (w / dataset.length);
+            })
+            .attr("y",function(d) 
+            {
+                return h - d;
+            })
+            .attr("width",function(d)
+            {
+                return (w / dataset.length-padding)
+            })
+            .attr("height",function(d)
+            {
+                return d;
+            })
+            .attr("fill","cyan");
+
+            svg.selectAll("text")
+            .data(dataset)
+            .enter()
+            .append("text")
+            .text(function(d)
+            {
+                return d;
+            })
+            .attr("fill","black")
+            .attr("x",function(d,i)
+        {
+            return i * (w/dataset.length) + 16;
+        })
+        .attr("y",function(d) 
+        {
+            return h - d - 5;
+        });
+            
+            
+
+</script>
+
+
+    <br>       
+    <br>          
+    <br>          
+       
+    <footer>COS30045 Data Visualisation</footer>
+</body>
+</html>
