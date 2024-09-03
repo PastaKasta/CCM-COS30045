@@ -51,7 +51,7 @@ function init(){
         })
         .attr("fill","black")
         .attr("x", function(d, i) {
-            return i * (w / CatSightings.length) +10.5;
+            return i * (w / CatSightings.length) +4.5;
         })
         .attr("y",function(d){
             return h - (d.Cat *4)
