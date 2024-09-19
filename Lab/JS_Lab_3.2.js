@@ -3,17 +3,16 @@ var width = 500;
 var padding = 40; // Increased padding to make space for axes
 
 var dataSet = [
-    [5, 20],
-    [25, 67],
-    [85, 21],
-    [100, 33],
-    [220, 88],
-    [250, 50],
-    [330, 95],
-    [410, 12],
-    [475, 44],
-    [500, 90],
-    [1000,99]
+    [2, 8],
+    [3, 5],
+    [5, 17],
+    [6, 6],
+    [6, 12],
+    [7, 20],
+    [8, 22],
+    [10, 11],
+    [5, 12],
+    [6, 16]
 ];
 
 // Extract y-values to calculate quartiles and IQR
@@ -83,3 +82,22 @@ var yAxis = d3.axisLeft(yScale);
 svg.append("g")
     .attr("transform", "translate(" + padding + ",0)") // Move the axis to the left
     .call(yAxis);
+
+    // Add X axis label
+svg.append("text")
+.attr("x", width / 2) // Center the label horizontally
+.attr("y", height - 5) // Position the label slightly below the axis
+.attr("text-anchor", "middle") // Center the text
+.attr("font-family", "sans-serif")
+.attr("font-size", "14px")
+.text("Tree Age (years)");
+
+// Add Y axis label
+svg.append("text")
+.attr("transform", "rotate(-90)") // Rotate the label
+.attr("x", -height / 2) // Center the label vertically
+.attr("y", 15) // Position the label slightly left of the axis
+.attr("text-anchor", "middle") // Center the text
+.attr("font-family", "sans-serif")
+.attr("font-size", "14px")
+.text("Tree Height (m)");
