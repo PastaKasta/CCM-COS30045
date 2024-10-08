@@ -10,136 +10,77 @@ const w = svgWidth - margin.left - margin.right;
 const h = svgHeight - margin.top - margin.bottom;
 
 // Select the SVG element and set its dimensions
-const svg = document.querySelector("svg");
-svg.setAttribute("width", svgWidth);
-svg.setAttribute("height", svgHeight);
+const svg = d3.select("svg")
+    .attr("width", svgWidth)
+    .attr("height", svgHeight);
 
 // Create a group element for margins
-const chartGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-chartGroup.setAttribute("transform", `translate(${margin.left},${margin.top})`);
-svg.appendChild(chartGroup);
+const chartGroup = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
 
-// Scaling Functions
-function xScale(index) {
-    const bandWidth = w / numValues;
-    return index * bandWidth;
-}
+// Scaling functions
+let xScale = d3.scaleBand()
+    .domain(d3.range(numValues))
+    .range([0, w])
+    .padding(0.1);
 
-function yScale(value) {
-    const maxVal = Math.max(...dataset, 1); // Prevent division by zero
-    return h - (value / maxVal) * h;
-}
+let yScale = d3.scaleLinear()
+    .domain([0, d3.max(dataset)])
+    .range([h, 0]);
 
-// Function to create axes
+// Create axes
 function createAxes() {
     // Remove existing axes if any
-    const existingAxes = chartGroup.querySelectorAll('.axis');
-    existingAxes.forEach(axis => chartGroup.removeChild(axis));
+    chartGroup.selectAll(".axis").remove();
 
     // Y Axis
-    const yAxis = document.createElementNS("http://www.w3.org/2000/svg", "g");
-    yAxis.setAttribute("class", "axis y-axis");
-    chartGroup.appendChild(yAxis);
-
-    const maxVal = Math.max(...dataset, 1);
-    const yTicks = 5;
-    for (let i = 0; i <= yTicks; i++) {
-        const y = i * (h / yTicks);
-        const value = Math.round(maxVal - (i * maxVal / yTicks));
-
-        // Tick line
-        const tickLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
-        tickLine.setAttribute("x1", -5);
-        tickLine.setAttribute("y1", y);
-        tickLine.setAttribute("x2", 0);
-        tickLine.setAttribute("y2", y);
-        tickLine.setAttribute("stroke", "black");
-        yAxis.appendChild(tickLine);
-
-        // Tick label
-        const tickLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        tickLabel.setAttribute("x", -10);
-        tickLabel.setAttribute("y", y + 5); // +5 to vertically center the text
-        tickLabel.setAttribute("text-anchor", "end");
-        tickLabel.setAttribute("font-size", "12px");
-        tickLabel.textContent = value;
-        yAxis.appendChild(tickLabel);
-
-        // Grid line
-        const gridLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
-        gridLine.setAttribute("x1", 0);
-        gridLine.setAttribute("y1", y);
-        gridLine.setAttribute("x2", w);
-        gridLine.setAttribute("y2", y);
-        gridLine.setAttribute("stroke", "#e0e0e0");
-        gridLine.setAttribute("stroke-dasharray", "2,2");
-        chartGroup.appendChild(gridLine);
-    }
+    const yAxis = d3.axisLeft(yScale).ticks(5);
+    chartGroup.append("g")
+        .attr("class", "axis y-axis")
+        .call(yAxis);
 
     // X Axis
-    const xAxis = document.createElementNS("http://www.w3.org/2000/svg", "g");
-    xAxis.setAttribute("class", "axis x-axis");
-    xAxis.setAttribute("transform", `translate(0, ${h})`);
-    chartGroup.appendChild(xAxis);
-
-    for (let i = 0; i < numValues; i++) {
-        const x = xScale(i) + (w / numValues) / 2;
-
-        // Tick line
-        const tickLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
-        tickLine.setAttribute("x1", x);
-        tickLine.setAttribute("y1", 0);
-        tickLine.setAttribute("x2", x);
-        tickLine.setAttribute("y2", 5);
-        tickLine.setAttribute("stroke", "black");
-        xAxis.appendChild(tickLine);
-
-        // Tick label
-        const tickLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        tickLabel.setAttribute("x", x);
-        tickLabel.setAttribute("y", 20);
-        tickLabel.setAttribute("text-anchor", "middle");
-        tickLabel.setAttribute("font-size", "12px");
-        tickLabel.textContent = i + 1;
-        xAxis.appendChild(tickLabel);
-    }
+    const xAxis = d3.axisBottom(xScale).tickFormat((d, i) => i + 1);
+    chartGroup.append("g")
+        .attr("class", "axis x-axis")
+        .attr("transform", `translate(0, ${h})`)
+        .call(xAxis);
 }
 
 // Function to draw bars
 function drawBars() {
-    // Remove existing bars
-    const existingBars = chartGroup.querySelectorAll('.bar');
-    existingBars.forEach(bar => chartGroup.removeChild(bar));
+    // Bind data to rectangles
+    const bars = chartGroup.selectAll(".bar")
+        .data(dataset);
 
-    // Create bars
-    dataset.forEach((d, i) => {
-        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-        rect.setAttribute("class", "bar");
-        rect.setAttribute("x", xScale(i));
-        rect.setAttribute("y", yScale(d));
-        rect.setAttribute("width", w / numValues - 10); // 10px padding between bars
-        rect.setAttribute("height", h - yScale(d));
-        rect.setAttribute("fill", "steelblue");
-        rect.style.transition = "all 0.5s ease";
-        chartGroup.appendChild(rect);
-    });
+    // Enter new bars
+    bars.enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", (d, i) => xScale(i))
+        .attr("y", d => yScale(d))
+        .attr("width", xScale.bandwidth())
+        .attr("height", d => h - yScale(d))
+        .attr("fill", "steelblue");
+
+    // Update existing bars
+    bars.transition()
+        .duration(500)
+        .attr("x", (d, i) => xScale(i))
+        .attr("y", d => yScale(d))
+        .attr("height", d => h - yScale(d))
+        .attr("width", xScale.bandwidth());
+
+    // Remove old bars
+    bars.exit().remove();
 }
 
-// Function to update the dataset with new random values (transform data) with animation
+// Function to update the dataset with new random values (transform data)
 function transformData() {
     // Update the dataset with random values between 0 and 25
     dataset = dataset.map(() => Math.floor(Math.random() * 25));
-
-    // Select all bars and update their heights and positions
-    const bars = chartGroup.querySelectorAll(".bar");
-    bars.forEach((bar, i) => {
-        bar.style.transition = "all 0.5s ease";  // Add transition effect
-        bar.setAttribute("y", yScale(dataset[i]));  // Update y position based on new value
-        bar.setAttribute("height", h - yScale(dataset[i]));  // Update height based on new value
-    });
-
-    // Update Y Axis and scales
-    createAxes();
+    yScale.domain([0, d3.max(dataset)]); // Update the scale domain
+    updateChart();
 }
 
 // Function to remove the last bar (LIFO)
@@ -148,26 +89,11 @@ function removeLastBar() {
         alert("Dataset is empty. Cannot remove any more bars.");
         return;
     }
-
-    // Remove the last element from the dataset (LIFO)
+    // Remove the last element from the dataset
     dataset.pop();
     numValues = dataset.length;
-
-    // Update the scales
-    const bars = chartGroup.querySelectorAll(".bar");
-
-    // Animate the removal of the last bar by transitioning it to the right
-    const lastBar = bars[bars.length - 1];
-    lastBar.setAttribute("x", w);  // Move the last bar to the right
-    lastBar.style.transition = "x 0.5s ease"; // Apply the transition
-
-    // After the transition, remove the bar from the DOM
-    setTimeout(() => {
-        chartGroup.removeChild(lastBar);
-
-        // After removing the last bar, update the remaining bars
-        updateChart();
-    }, 500);
+    xScale.domain(d3.range(numValues)); // Update the xScale domain based on the new length
+    updateChart();
 }
 
 // Function to add a new bar (update data)
@@ -176,11 +102,16 @@ function updateData() {
     const newNumber = Math.floor(Math.random() * 25);
     dataset.push(newNumber);
     numValues = dataset.length;
+
+    // Update the scales with the new data size
+    xScale.domain(d3.range(numValues));
+    yScale.domain([0, d3.max(dataset)]);
+
+    // Re-render the chart with the updated data
     updateChart();
-    console.log("New dataset:", dataset);
 }
 
-// Initial Render
+// Initial render
 createAxes();
 drawBars();
 
@@ -191,14 +122,6 @@ function updateChart() {
 }
 
 // Event listeners for buttons
-document.getElementById("update").addEventListener("click", () => {
-    updateData();
-});
-
-document.getElementById("transform").addEventListener("click", () => {
-    transformData();
-});
-
-document.getElementById("remove").addEventListener("click", () => {
-    removeLastBar();
-});
+document.getElementById("update").addEventListener("click", updateData);
+document.getElementById("transform").addEventListener("click", transformData);
+document.getElementById("remove").addEventListener("click", removeLastBar);
