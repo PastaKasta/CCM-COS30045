@@ -1,0 +1,157 @@
+Cancer id,Cancer label,Population id,Country label,Sex,Type,Year,ASR (World),Crude rate,Cumulative risk,Total
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2000,54.63375462,86.08255632,,24496
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2001,53.31512833,84.99547097,,24326
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2002,52.91395898,85.56952347,,24634
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2003,51.51360949,84.81056961,,24558
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2004,51.45431405,85.58790146,,24936
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2005,50.98825088,86.14325146,,25259
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2006,50.10034323,86.178661,,25434
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2007,49.07709234,85.46909422,,25388
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2008,47.44763931,84.67584096,,25307
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2009,47.08068086,84.74367376,,25475
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2010,46.14260321,84.4882786,,25537
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2011,45.53336763,84.31367511,,25614
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),1,1,2012,43.69660515,82.9379668,,25311
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2000,8.591680278,16.47850616,,4978
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2001,8.808928272,16.99982865,,5167
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2002,9.63442135,18.66631852,,5709
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2003,10.06836841,19.23179101,,5918
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2004,10.33141141,19.98161072,,6189
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2005,10.95242591,21.46659556,,6695
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2006,11.38684799,22.38741088,,7031
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2007,11.37899144,22.82050213,,7217
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2008,11.86560834,23.83608264,,7588
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2009,12.33663411,25.27156,,8095
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2010,12.26216576,25.41972616,,8190
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2011,12.67238912,26.3058345,,8522
+11_1,"Lip,  oral cavity and pharynx , Lung",250,France (metropolitan),2,1,2012,13.17548731,27.73901586,,9030
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2000,47.55657245,81.56354931,,32720
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2001,45.73090559,80.46626119,,32359
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2002,44.95154767,80.51266136,,32455
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2003,43.86832424,80.33120855,,32413
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2004,42.3738357,79.97503649,,32270
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2005,41.82400065,81.0007964,,32683
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2006,40.86972926,80.66162924,,32521
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2007,40.10432312,81.3968032,,32793
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2008,39.96757999,82.70915026,,33281
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2009,38.76113759,82.15378413,,32971
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2010,38.03734885,82.78580248,,33197
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2011,37.89945236,83.97135784,,33717
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,1,1,2012,37.413021,83.93222434,,33803
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2000,11.97675636,25.94383321,,10915
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2001,12.00599049,26.2620608,,11063
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2002,12.26926718,26.97532164,,11376
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2003,12.5039116,27.73471499,,11696
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2004,12.8108502,28.51640012,,12020
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2005,13.50825498,30.43307859,,12817
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2006,13.56898876,30.87899323,,12984
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2007,13.98876348,32.17643416,,13506
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2008,14.48255717,33.45416644,,14011
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2009,14.55496986,34.19139226,,14272
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2010,14.86797481,35.60214703,,14831
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2011,15.60296951,37.50759767,,15613
+11_1,"Lip,  oral cavity and pharynx , Lung",276,Germany,2,1,2012,15.78474321,38.55372641,,16055
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2000,33.82318212,69.37938546,,42660
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2001,33.38242273,70.92830703,,43689
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2002,33.03915614,72.97582517,,44948
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2003,32.35838085,74.11067835,,45667
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2004,32.93641651,77.83856619,,47947
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2005,32.5762799,80.07252049,,49339
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2006,32.30151886,81.61912806,,50248
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2007,32.35954923,84.99756137,,52282
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2008,32.05026383,86.81460016,,53325
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2009,31.28161145,87.57540187,,53717
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2010,31.35834869,89.69701305,,55228
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2011,30.9772748,90.60450736,,55681
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,1,1,2012,30.60916088,92.18941086,,56537
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2000,9.302252027,25.14946364,,16127
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2001,9.117576685,25.74089623,,16555
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2002,8.905577736,26.06690988,,16791
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2003,8.424100983,25.83620075,,16669
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2004,8.718014964,27.15772197,,17539
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2005,8.765482493,28.49024949,,18401
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2006,8.846149632,29.45174726,,19022
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2007,8.817619879,30.53860687,,19720
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2008,8.849890938,31.15226656,,20101
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2009,8.602333754,31.64653154,,20406
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2010,8.721785419,32.98719283,,21379
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2011,8.618325658,33.21282907,,21498
+11_1,"Lip,  oral cavity and pharynx , Lung",392,Japan,2,1,2012,8.577915753,34.26529065,,22146
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2000,47.96511944,38.92172572,,9288
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2001,47.19998705,39.471907,,9486
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2002,47.34164972,41.28550757,,9971
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2003,45.61708765,41.42738979,,10040
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2004,45.84818801,43.64093544,,10612
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2005,44.43419941,44.24477125,,10800
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2006,44.06296901,45.6774425,,11194
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2007,42.36289042,46.01989625,,11332
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2008,41.31206668,47.09763833,,11660
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2009,39.11501536,46.85964032,,11657
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2010,38.90567914,48.676464,,12158
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2011,37.24271176,48.76048009,,12230
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",1,1,2012,37.37600077,51.54938375,,12984
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2000,11.45926964,14.33408723,,3393
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2001,10.67601168,13.61304349,,3246
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2002,11.10539753,14.76573658,,3540
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2003,10.67340641,14.83806117,,3572
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2004,10.42123977,15.01114768,,3628
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2005,10.62536221,15.90630859,,3861
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2006,10.03087032,15.62729949,,3810
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2007,9.9701538,16.15507435,,3959
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2008,9.906078016,16.63449177,,4100
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2009,9.733393015,17.09016237,,4235
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2010,9.617317702,17.78525721,,4429
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2011,9.578472475,18.28628467,,4577
+11_1,"Lip,  oral cavity and pharynx , Lung",410,"Korea, Republic of",2,1,2012,9.354931729,18.70590141,,4706
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2000,42.18193979,76.01215161,,22066
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2001,41.02137343,75.43318108,,21732
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2002,40.38316295,74.48805645,,21575
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2003,38.24763579,72.13975854,,20999
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2004,37.58235578,71.23105572,,20855
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2005,36.9267194,70.48843823,,20792
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2006,36.47145356,70.53958132,,20946
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2007,36.05481746,70.7344709,,21161
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2008,35.45591545,70.47448675,,21249
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2009,34.74107827,69.93149736,,21241
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2010,33.74370991,68.5044741,,20992
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2011,33.17855133,68.44433511,,21189
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,1,1,2012,32.09070183,67.02523309,,20989
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2000,20.93186049,45.59520235,,13780
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2001,20.6794589,45.51730742,,13765
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2002,20.78379172,46.53625864,,14128
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2003,20.64141292,47.02024587,,14317
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2004,20.65331384,46.50305834,,14215
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2005,20.89311141,47.86712827,,14715
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2006,21.73070903,49.48308994,,15287
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2007,21.60447404,50.18473081,,15587
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2008,22.12942566,51.81894619,,16184
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2009,21.62633632,51.16502524,,16075
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2010,21.63934472,51.44105644,,16265
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2011,21.51246296,51.56771697,,16431
+11_1,"Lip,  oral cavity and pharynx , Lung",826,United Kingdom,2,1,2012,21.58314388,52.0809567,,16869
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2000,48.60317928,68.63129799,,95416
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2001,47.56544981,67.98272227,,95577
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2002,46.39785662,67.14692828,,95355
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2003,45.33241224,66.4478253,,95259
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2004,44.18057746,65.57769681,,94939
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2005,43.37971273,65.28225917,,95458
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2006,41.79036151,64.0240092,,94546
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2007,40.44042899,62.94458616,,93880
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2008,39.41937116,62.46912597,,94074
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2009,38.02414214,61.33895323,,93216
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2010,37.18976611,61.04081091,,93559
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2011,35.92738476,60.06032916,,92895
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,1,1,2012,34.90114447,59.5474767,,93002
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2000,27.58858794,47.1446213,,67592
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2001,27.23853829,47.05813818,,68178
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2002,27.42142478,47.8984745,,70095
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2003,27.10124564,47.78453645,,70602
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2004,26.74578556,47.57848185,,70975
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2005,26.33724491,47.5397633,,71604
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2006,25.83727853,47.23686515,,71838
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2007,25.61617533,47.49201768,,72946
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2008,24.73786717,46.80851573,,72601
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2009,24.29179872,46.54685063,,72866
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2010,23.76397112,46.38338896,,73244
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2011,23.00390579,45.71089348,,72775
+11_1,"Lip,  oral cavity and pharynx , Lung",840,USA,2,1,2012,22.72232355,45.75183682,,73418

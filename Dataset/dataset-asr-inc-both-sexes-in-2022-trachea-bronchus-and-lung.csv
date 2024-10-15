@@ -1,0 +1,4 @@
+Label,Cancer code,Country code (ISO/UN),Alpha‑3 code,Sex,Type,ASR (World),Crude rate,Cumulative risk,Total
+Germany,15,276,DEU,0,0,28.13,73.94,,62025
+Japan,15,392,JPN,0,0,30.47,108.87,,136723
+United States of America,15,840,USA,0,0,31.85,67.51,,226033
