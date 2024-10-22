@@ -7,12 +7,8 @@ var dataset = [
 ];
 
 // Set up the stack
-// Reverse the keys array so the largest category (grapes) is stacked first
 const keys = ['grapes', 'oranges', 'apples']; // Order by largest category first
-
-const stack = d3.stack()
-    .keys(keys);
-
+const stack = d3.stack().keys(keys);
 const series = stack(dataset);
 
 // Set up SVG and margins
@@ -24,14 +20,13 @@ const height = svgHeight - margin.top - margin.bottom;
 
 // Create SVG element inside the chart-container div
 const svg = d3.select("#chart-container svg")
-    .attr("width", svgWidth)
+    .attr("width", svgWidth + 100) // Additional width for the legend
     .attr("height", svgHeight)
     .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // Custom colors for the categories (grapes, oranges, apples)
 const colorArray = ['#d5d0d9', '#f9e9d3', '#e09123']; // Color for grapes, oranges, apples in reversed order
-
 const color = d3.scaleOrdinal()
     .domain(keys)
     .range(colorArray); // Use custom color array
@@ -71,3 +66,30 @@ svg.append("g")
 // Add y-axis
 svg.append("g")
     .call(d3.axisLeft(yScale));
+
+// Legend setup
+const legend = svg.append("g")
+    .attr("class", "legend")
+    .attr("transform", `translate(${width + 20}, 20)`); // Position the legend to the right of the chart
+
+// Legend rectangles
+legend.selectAll("rect")
+    .data(keys)
+    .enter()
+    .append("rect")
+    .attr("x", 0)
+    .attr("y", (d, i) => i * 20) // Space each rectangle vertically
+    .attr("width", 18)
+    .attr("height", 18)
+    .attr("fill", d => color(d)); // Fill with the corresponding color from the color scale
+
+// Legend text
+legend.selectAll("text")
+    .data(keys)
+    .enter()
+    .append("text")
+    .attr("x", 24) // Position the text next to the rectangle
+    .attr("y", (d, i) => i * 20 + 13) // Align text vertically with the rectangle
+    .text(d => d)
+    .attr("font-size", "12px")
+    .attr("fill", "#000"); // You can adjust the font color as needed

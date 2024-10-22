@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 7.3 - Stacked Bar Chart</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script> <!-- Load D3.js Library -->
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <title>Stacked Bar Chart with Legend</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script> <!-- Load D3.js Library -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file (optional) -->
+    <style>
+        /* Basic styling for chart container */
+        #chart-container {
+            width: 600px;
+            height: 350px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Lab 7.3 - Stacked Bar Chart</h1>
+        <h1>Lab 7.3</h1>
         <nav>
             <ul>
                 <li><a href="Lab_7.1.html">Lab 7.1</a></li>
@@ -18,14 +26,17 @@
                 <li><a href="Lab_7.3.html">Lab 7.3</a></li>
             </ul>
         </nav>
-    </header>
-
+        <button onclick="window.location.href='../index.html'" style="background-color: #0cbee7; color: white; padding: 10px 20px; font-size: 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+            Homepage
+        </button>
+    </header>  
+        
     <div id="chart-container">
-        <svg></svg> <!-- SVG Canvas -->
+        <svg></svg>
     </div>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="JS_Lab_7.3.js"></script>
 
-    <footer>COS30045 Data Visualisation</footer>
-
-    <script src="JS_Lab_7.3.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
